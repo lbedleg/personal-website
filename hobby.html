@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lucas Bedleg - Hobby</title>
+
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/responsive.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav" aria-label="Primary">
+      <a href="index.html">Info</a>
+      <a href="project.html">Project</a>
+      <a href="hobby.html" aria-current="page">Hobby</a>
+      <button id="darkToggle" class="btn btn--sm" type="button">Dark Mode</button>
+    </nav>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero" aria-labelledby="hobby-hero">
+      <div class="hero__grid">
+        <div>
+          <h1 id="hobby-hero" class="hero-text--desktop">Outside class, I'm into <span class="accent">soccer, gaming, and traveling</span>.</h1>
+          <h1 class="hero-text--mobile">I love <span class="accent">soccer, video games & travel</span>.</h1>
+          <p>
+            Soccer has been a big part of my life as an NCAA athlete, but I also spend time gaming 
+            (Fortnite, FC25, Rocket League) and exploring the world. Being from Europe, I've been lucky 
+            to visit France, Germany, Spain, and the UK, along with trips to the Dominican Republic 
+            and Mexico. In the U.S., I've been to Georgia, Kentucky, Ohio, Illinois, Florida, and Indiana.
+          </p>
+        </div>
+        <figure>
+          <picture>
+            <!-- mobile -->
+            <source srcset="../img/hobby-mobile.jpg" media="(max-width: 640px)">
+            <!-- desktop -->
+            <img class="responsive" src="../img/hobby.jpg" alt="Collage of soccer, gaming, and travel">
+          </picture>
+        </figure>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section aria-labelledby="gallery-title">
+      <h2 id="gallery-title">Gallery</h2>
+      <div class="gallery">
+        <figure class="card">
+          <img class="responsive" src="../img/soccer.jpg" alt="Soccer game action" />
+          <figcaption style="margin-top:8px; font-size:0.95rem; font-style:italic; color:#555;">On the pitch, soccer keeps me competitive and focused.</figcaption>
+        </figure>
+        <figure class="card">
+          <img class="responsive" src="../img/fc25.jpg" alt="FC25" />
+          <figcaption style="margin-top:8px; font-size:0.95rem; font-style:italic; color:#555;">Gaming: Fortnite, FC25, Rocket League with friends.</figcaption>
+        </figure>
+        <figure class="card">
+          <img class="responsive" src="../img/travel.jpg" alt="Travel photo" />
+          <figcaption style="margin-top:8px; font-size:0.95rem; font-style:italic; color:#555;">Traveling across Europe and the Americas, discovering new cultures.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- SUMMARY -->
+    <section aria-labelledby="club-title">
+      <h2 id="club-title">Summary</h2>
+      <ul class="checklist">
+        <li>NCAA Men's Soccer - University of Indianapolis</li>
+        <li>Gaming with friends - Fortnite, FC25, Rocket League</li>
+        <li>Traveling to new countries and states, learning about different cultures</li>
+      </ul>
+    </section>
+  </main>
+
+  <button id="toTop" class="to-top" aria-label="Back to top">↑</button>
+
+  <script src="../js/features.js" defer></script>
+</body>
+</html>

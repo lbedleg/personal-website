@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lucas Bedleg - Project</title>
+
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/responsive.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav" aria-label="Primary">
+      <a href="index.html">Info</a>
+      <a href="project.html" aria-current="page">Project</a>
+      <a href="hobby.html">Hobby</a>
+      <button id="darkToggle" class="btn btn--sm" type="button">Dark Mode</button>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section aria-labelledby="proj-intro" class="hero--simple">
+      <h1 id="proj-intro">Interactive Demos</h1>
+      <p>
+        A small gallery of front-end interactions built with vanilla JavaScript.
+      </p>
+    
+    <div style="text-align:center; margin-top:16px;">
+      <img src="../img/javascript.jpg" alt="Illustration of front-end project demo" style="max-width:70%; border-radius:12px;">
+    </div>
+    </section>    
+
+    <!-- 1) Accordion -->
+    <section aria-labelledby="acc-title">
+      <h2 id="acc-title">1) Accordion (FAQ)</h2>
+      <div class="acc">
+        <article class="acc__item">
+          <button class="acc__head" aria-expanded="false">What is an accordion?</button>
+          <div class="acc__panel">
+            <p>An accessible disclosure widget that expands/collapses content.</p>
+          </div>
+        </article>
+        <article class="acc__item">
+          <button class="acc__head" aria-expanded="false">Why use it?</button>
+          <div class="acc__panel">
+            <p>Great for FAQs and compact content on mobile.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- 2) Modal -->
+    <section aria-labelledby="modal-title">
+      <h2 id="modal-title">2) Modal Dialog</h2>
+      <p>Open a native HTML <code>&lt;dialog&gt;</code> to display details without leaving the page.</p>
+      <button id="openModal" class="btn">Open Modal</button>
+      <dialog id="demoModal" aria-labelledby="modal-heading" aria-describedby="modal-desc">
+        <h3 id="modal-heading">Project Detail</h3>
+        <p id="modal-desc">This is a demo modal. Press ESC or close.</p>
+        <form method="dialog">
+          <button id="closeModal" class="btn btn--ghost">Close</button>
+        </form>
+      </dialog>
+    </section>
+
+    <!-- 3) Slider -->
+    <section aria-labelledby="slider-title">
+      <h2 id="slider-title">3) Image/Text Slider</h2>
+      <div class="slider">
+        <div class="slides">
+          <figure class="slide">
+            <img class="responsive" src="../img/campus.jpg" alt="Project preview one" />
+            <figcaption style="margin-top:8px; font-size:0.95rem; font-style:italic; color:#555;">Campus - University of Indianapolis</figcaption>
+          </figure>
+          <figure class="slide">
+            <img class="responsive" src="../img/library.jpg" alt="Project preview two" />
+            <figcaption style="margin-top:8px; font-size:0.95rem; font-style:italic; color:#555;">Library - University of Indianapolis</figcaption>
+          </figure>
+          <figure class="slide">
+            <img class="responsive" src="../img/key.jpg" alt="Project preview three" />
+            <figcaption style="margin-top:8px; font-size:0.95rem; font-style:italic; color:#555;">Key Stadium - University of Indianapolis</figcaption>
+          </figure>
+        </div>
+        <div class="slider__controls">
+          <button id="prev" class="btn btn--sm" aria-label="Previous slide">Prev</button>
+          <button id="next" class="btn btn--sm" aria-label="Next slide">Next</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4) Dark Mode -->
+    <section aria-labelledby="dark-title">
+      <h2 id="dark-title">4) Dark Mode Toggle</h2>
+      <p>Use the "Dark Mode" button in the header to switch themes.</p>
+    </section>
+
+    <!-- 5) Back-to-top -->
+    <section aria-labelledby="top-title">
+      <h2 id="top-title">5) Back-to-Top Button</h2>
+      <p>Scroll and use the floating ↑ control for smooth return to top.</p>
+    </section>
+
+    <!-- 6) Live Filter (optional extra) -->
+    <section aria-labelledby="filter-title">
+      <h2 id="filter-title">6) Live Filter</h2>
+      <input id="filterInput" type="search" placeholder="Filter items ..." aria-label="Filter items" />
+      <ul id="filterList" class="pill-list">
+        <li data-label="html">HTML</li>
+        <li data-label="css">CSS</li>
+        <li data-label="javascript">JavaScript</li>
+        <li data-label="ui">UI</li>
+        <li data-label="accessibility">Accessibility</li>
+      </ul>
+    </section>
+  </main>
+
+  <button id="toTop" class="to-top" aria-label="Back to top">↑</button>
+
+  <script src="../js/features.js" defer></script>
+</body>
+</html>

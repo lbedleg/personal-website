@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lucas Bedleg - Info</title>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/responsive.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav" aria-label="Primary">
+      <a href="index.html" aria-current="page">Info</a>
+      <a href="project.html">Project</a>
+      <a href="hobby.html">Hobby</a>
+      <button id="darkToggle" class="btn btn--sm" type="button" aria-pressed="false">Dark Mode</button>
+    </nav>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero" aria-labelledby="intro-title">
+      <div class="hero__grid">
+        <div>
+          <h1 id="intro-title" class="hero-text--desktop">Hi, I'm <span class="accent">Lucas Bedleg</span>.</h1>
+          <h1 class="hero-text--mobile">Hey! I'm <span class="accent">Lucas</span>.</h1>
+          <p>
+            I'm currently a senior at the University of Indianapolis studying Computer Science (B.S., in progress; GPA = 3.71)
+            and an NCAA men's soccer athlete. I enjoy building usable, responsive front-ends and learning
+            systems topics like algorithms, networking, and security.
+          </p>
+          <ul class="tags">
+            <li>HTML/CSS</li><li>JavaScript</li><li>UI Basics</li><li>Teamwork & Leadership</li>
+          </ul>
+        </div>
+
+        <!-- Desktop/Mobile image swap -->
+        <figure>
+          <picture>
+            <source srcset="../img/profile.jpg" media="(max-width: 640px)">
+            <img class="responsive" src="../img/profile.jpg" alt="Portrait of Lucas">
+          </picture>
+          <figcaption class="sr-only">Profile image adapts for mobile and desktop.</figcaption>
+        </figure>        
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section aria-labelledby="exp-title">
+      <h2 id="exp-title">Experience</h2>
+      <div class="card-list">
+        <article class="card">
+          <h3>Youth Coach - Georgia Storm (Carrollton)</h3>
+          <p class="muted">May 2023 - Jul 2023</p>
+          <ul>
+            <li>Led soccer camps; mentored younger athletes to build technical skills and confidence.</li>
+            <li>Strengthened leadership and communication through daily coaching.</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3>Desk Assistant - Georgia Southwestern University</h3>
+          <p class="muted">Jan 2024 - May 2024</p>
+          <ul>
+            <li>Provided front-desk support and enforced campus policies to keep residents safe.</li>
+            <li>Coordinated schedules, calls, and visitor assistance with professionalism.</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3>Warehouse Packer - Stellantis (Vesoul)</h3>
+          <p class="muted">May 2024 - Jul 2024</p>
+          <ul>
+            <li>Collaborated to hit daily production targets and maintained accurate inventory records.</li>
+            <li>Packed/labeled automotive parts for on-time shipment with attention to detail.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section aria-labelledby="edu-title">
+      <h2 id="edu-title">Education</h2>
+      <div class="grid-2">
+        <div>
+          <h3>Georgia Southwestern State University - B.S. CSCI</h3>
+          <p class="muted">2022 - 2024</p>
+          <ul>
+            <li>All-Academic Distinction (2024)</li>
+          </ul>
+        </div>
+        <div>
+          <h3>University of Indianapolis - B.S. CSCI</h3>
+          <p class="muted">2024 - 2026</p>
+          <ul>
+            <li>All-Academic Distinction (2025)</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section aria-labelledby="skills-title" class="skills-section">
+      <h2 id="skills-title">Skills</h2>
+      <div class="grid-2">
+        <ul>
+          <li><strong>Front-End Development:</strong> HTML, CSS (Flexbox/Grid), JavaScript (basic), SQL, Python</li>
+          <li><strong>Tools & Platforms:</strong> Git/GitHub, Microsoft Office Suite, Visual Studio Code</li>
+          <li><strong>Languages:</strong> English and French (fluent), Spanish (proficient)</li>
+        </ul>
+        <ul>
+          <li><strong>Sports Technology:</strong> Catapult performance tracking (familiar)</li>
+          <li><strong>Core Competencies:</strong> Teamwork, Communication, Problem-Solving</li>
+          <li><strong>Community Engagement:</strong> Magnolia Manor, Special Olympics, Night to Shine</li>
+        </ul>
+      </div>
+    </section>
+
+
+    <!-- CONTACT -->
+    <section aria-labelledby="contact-title">
+      <h2 id="contact-title">Contact</h2>
+      <p>Email: <a href="email: lulu.bm9000@gmail.com">lulu.bm9000@gmail.com</a></p>
+    </section>
+  </main>
+
+  <!-- Back to top -->
+  <button id="toTop" class="to-top" aria-label="Back to top">↑</button>
+
+  <!-- Scripts -->
+  <script src="../js/features.js" defer></script>
+</body>
+</html>
