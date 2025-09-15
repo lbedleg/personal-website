@@ -1,0 +1,131 @@
+:root {
+    --max: 1100px;
+    --bg: #ffffff;
+    --fg: #111111;
+    --muted: #666;
+    --card: #fafafa;
+    --accent: #5b7cff;
+    --border: #e9e9e9;
+  }
+  
+  * { box-sizing: border-box; }
+  html, body { height: 100%; }
+  body {
+    margin: 0;
+    font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+    line-height: 1.55;
+    color: var(--fg);
+    background: var(--bg);
+  }
+  
+  /* Dark mode (toggled by JS) */
+  .dark {
+    --bg: #0f1115;
+    --fg: #f5f7fb;
+    --muted: #a8b0bf;
+    --card: #171a20;
+    --border: #262b36;
+    --accent: #7aa2ff;
+  }
+  
+  /* Layout */
+  .site-header {
+    position: sticky; top: 0; z-index: 10;
+    background: var(--bg);
+    border-bottom: 1px solid var(--border);
+  }
+  .nav {
+    max-width: var(--max);
+    margin: 0 auto;
+    padding: 12px 20px;
+    display: flex; gap: 16px; align-items: center; flex-wrap: wrap;
+  }
+  .nav a {
+    text-decoration: none;
+    color: var(--fg);
+    padding: 8px 10px; border-radius: 10px;
+  }
+  .nav a[aria-current="page"] { background: var(--card); }
+  
+  main { max-width: var(--max); margin: 0 auto; padding: 24px 20px; }
+  section {
+    background: var(--card);
+    padding: 24px;
+    margin: 20px 0;
+    border-radius: 14px;
+    border: 1px solid var(--border);
+  }
+  
+  /* Buttons */
+  .btn {
+    border: 1px solid var(--border);
+    background: var(--bg);
+    color: var(--fg);
+    padding: 10px 14px;
+    border-radius: 12px;
+    cursor: pointer;
+  }
+  .btn:hover { border-color: var(--accent); }
+  .btn--sm { padding: 6px 10px; font-size: 0.9rem; }
+  .btn--ghost { background: transparent; }
+  
+  /* Typography & helpers */
+  h1, h2, h3 { line-height: 1.2; margin: 0 0 10px; }
+  p { margin: 0 0 12px; }
+  .muted { color: var(--muted); }
+  .accent { color: var(--accent); font-weight: 700; }
+  .tags { list-style: none; padding: 0; margin: 12px 0 0; display: flex; gap: 8px; flex-wrap: wrap; }
+  .tags li {
+    padding: 6px 10px; border: 1px solid var(--border); border-radius: 999px; background: var(--bg);
+    font-size: 0.9rem;
+  }
+  .sr-only { position: absolute; width: 1px; height: 1px; clip: rect(0 0 0 0); overflow: hidden; }
+  
+  /* Cards, grids, gallery */
+  .card-list { display: grid; gap: 16px; }
+  .card { background: var(--bg); border: 1px solid var(--border); border-radius: 12px; padding: 16px; }
+  .grid-2 { display: grid; gap: 16px; grid-template-columns: repeat(2, minmax(0,1fr)); }
+  .gallery { display: grid; gap: 16px; grid-template-columns: repeat(3, minmax(0,1fr)); }
+  .checklist { padding-left: 20px; }
+  .checklist li { margin: 6px 0; }
+  
+  /* Hero */
+  .hero__grid { display: grid; gap: 20px; grid-template-columns: 1.2fr 1fr; align-items: center; }
+  .hero--simple { padding: 18px; }
+  
+  /* Images */
+  img.responsive { width: 100%; height: auto; display: block; border-radius: 12px; }
+  
+  /* Accordion */
+  .acc { display: grid; gap: 10px; }
+  .acc__item { border: 1px solid var(--border); border-radius: 12px; background: var(--bg); }
+  .acc__head {
+    width: 100%; text-align: left; padding: 12px 14px; border: 0; background: transparent; cursor: pointer;
+    font-size: 1rem;
+  }
+  .acc__panel { padding: 0 14px 14px; display: none; }
+  .acc__item.open .acc__panel { display: block; }
+  .acc__item.open .acc__head { color: var(--accent); }
+  
+  /* Slider */
+  .slider { display: grid; gap: 10px; }
+  .slides { position: relative; }
+  .slide { display: none; }
+  .slide:first-child { display: block; }
+  .slider__controls { display: flex; gap: 10px; }
+  
+  /* Back to top */
+  .to-top {
+    position: fixed; right: 16px; bottom: 16px;
+    opacity: 0; transition: opacity .2s ease;
+    border: 1px solid var(--border); background: var(--bg); color: var(--fg);
+    padding: 10px 12px; border-radius: 999px; cursor: pointer;
+  }
+  
+  /* Pills */
+  .pill-list { list-style: none; display: flex; gap: 8px; padding: 0; margin: 10px 0 0; flex-wrap: wrap; }
+  .pill-list li { border: 1px solid var(--border); padding: 6px 10px; border-radius: 999px; background: var(--bg); }
+  
+  figcaption {
+    text-align: center;
+  }
